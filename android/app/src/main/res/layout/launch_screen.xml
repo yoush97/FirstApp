@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c81717 ">
+
+<!--    Added this codes for Designing Splash Screen    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirstApp"
+        android:layout_centerInParent="true"
+        android:textSize="41sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/holo_orange_dark"/>
+</RelativeLayout>

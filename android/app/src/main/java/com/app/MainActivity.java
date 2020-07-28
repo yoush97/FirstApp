@@ -1,5 +1,8 @@
 package com.app;
 
+import android.os.Bundle; // Line added for Splash Screen
+import org.devio.rn.splashscreen.SplashScreen;// for Splash Screen
+
 import com.facebook.react.ReactActivity;
 
 public class MainActivity extends ReactActivity {
@@ -12,4 +15,14 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "App";
   }
+
+
+  // Added these lOC also for Splash Screen
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this);
+    super.onCreate(savedInstanceState);
+  }
+
 }
+

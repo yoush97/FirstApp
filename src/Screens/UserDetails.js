@@ -10,9 +10,7 @@ export default class UserDetails extends Component {
 
     };
   }
-  //TODO: Separete Splash n Navigator if possbile !!!
-  //REVIEW: Fixed Users !!!
-  //NOTE: PULL to Refresh !!!
+
   render() {
     const { item } = this.props.navigation.state.params;
     return (
