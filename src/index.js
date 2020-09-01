@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import SplashScreen from 'react-native-splash-screen';
 
 import App from './App';
+import { Provider } from 'react-redux';
 
 export default class AppComponent extends PureComponent {
     componentDidMount = () => {
@@ -9,7 +10,9 @@ export default class AppComponent extends PureComponent {
     }
     render() {
         return (
-            <App />
+            <Provider store={reduxStore}>
+                <App />
+            </Provider>
         );
     }
 }
