@@ -12,7 +12,7 @@ export default class UsersScreen extends Component {
   }
 
   componentDidMount() {
-    Axios.get('https://randomuser.me/api/?results=10')
+    Axios.get('https://randomuser.me/api/?results=1')
       .then(res => {
         const data = res.data.results;
         this.setState({ data });
