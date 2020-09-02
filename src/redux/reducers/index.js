@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import verifyEmail from './verifyEmail'
+import login from './login'
 
 export default combineReducers({
-    verifyEmail,
+    login,
 
 })

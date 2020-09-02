@@ -1,11 +1,19 @@
-import { CHECK_EMAIL, CHECK_PASSWROD, } from './actionTypes';
+import {LOGIN_EMAIL_CHANGE, LOGIN_PASSWORD_CHANGE, } from './actionTypes';
 
-export const email = () => ({
-    type: CHECK_EMAIL,
+export const changeLoginEmail = (email) => {
+    return {
+      type: LOGIN_EMAIL_CHANGE,
+      payload: {
+        email,
+      },
+    }
+  }
 
-})
-
-export const password = () => ({
-    type: CHECK_PASSWROD,
-
-})
+export const changeLoginPassword = (password) => {
+  return {
+    type: LOGIN_PASSWORD_CHANGE,
+    payload: {
+      password,
+    },
+  }
+}
