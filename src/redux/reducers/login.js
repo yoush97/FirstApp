@@ -1,4 +1,4 @@
-import { LOGIN_EMAIL_CHANGE, LOGIN_PASSWORD_CHANGE} from '../actions'; 
+import { LOGIN_EMAIL_CHANGE, LOGIN_PASSWORD_CHANGE, } from '../actions'; 
 
 const INITIAL_STATE = {
     email: '',
@@ -20,6 +20,6 @@ const login = (state = INITIAL_STATE, action) => {
           default:
             return state;
     }
-    
+
 }
 export default login
