@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
 
-export default class Login extends Component {
+import { connect } from 'react-redux';
+// import { login } from '../redux/actions';
+class Login extends Component {
     constructor() {
         super();
         this.state = {
@@ -108,6 +110,8 @@ export default class Login extends Component {
         )
     }
 }
+
+export default connect()(Login)
 
 const styles = StyleSheet.create({
     container: {
